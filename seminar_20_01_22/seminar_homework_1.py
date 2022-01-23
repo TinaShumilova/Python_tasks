@@ -28,12 +28,17 @@ import math
 
 #7. Показать числа от -N до N
 def show_number(x, y):
-    for i in range(x, y+1):
-        print(i)
+    if x < 0 and y >= 0:
+        for i in range(x, y+1):
+            print(i)
+    else: print('неверно заданные параметры')
 
 e = int(input('-N = '))
 g = int(input('N = '))
 show_number(e, g)
+
+#9. Показать последнюю цифру трёхзначного числа
+
 
 
 
