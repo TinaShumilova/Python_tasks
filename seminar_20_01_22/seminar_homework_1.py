@@ -38,18 +38,30 @@ import math
 # show_number(e, g)
 
 #9. Показать последнюю цифру трёхзначного числа
-def find_last_number_of_hundreds(x):
-    if 1000 > x >= 100:
-        return x%10
-    elif -1000 < x <= -100:
-        x *= -1
-        return x%10
-    else: return 'неверно заданное число, введите трёхзначное число'
+# def find_last_number_of_hundreds(x):
+#     if 1000 > x >= 100:
+#         return x%10
+#     elif -1000 < x <= -100:
+#         x *= -1
+#         return x%10
+#     else: return 'неверно заданное число, введите трёхзначное число'
 
-h = int(input('Введите трёхзначное число = '))
-print(find_last_number_of_hundreds(h))
+# h = int(input('Введите трёхзначное число = '))
+# print(find_last_number_of_hundreds(h))
 
+#11. Дано число из отрезка [10, 99]. Показать наибольшую цифру числа
+def biggest_number(x, y, z):
+    if y <= x <= z:
+        first = x//10
+        second = x%10
+        if first > second:
+            return first
+        else: return second
+    else: return 'неверно указано число'
 
-
+y = 10
+z = 99
+i = int(input('Введите число из отрезка [10, 99] = '))
+print(biggest_number(i, y, z))
 
         
