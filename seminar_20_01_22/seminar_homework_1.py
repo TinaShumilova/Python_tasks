@@ -66,10 +66,24 @@ import math
 
 #13. Выяснить, кратно ли число заданному, если нет, вывести остаток.
 
-def kratno_or_not(x, y):
-    if x%y ==0: return f'Число {x} кратно числу {y}'
-    else: return x%y
+# def kratno_or_not(x, y):
+#     if x%y ==0: return f'Число {x} кратно числу {y}'
+#     else: return x%y
 
-j = -9
-k = int(input('Введите число = '))
-print(kratno_or_not(j, k))
+# j = -9
+# k = int(input('Введите число = '))
+# print(kratno_or_not(j, k))
+
+# 16. Дано число обозначающее день недели. Выяснить является номер дня недели выходным
+
+def weekends_or_not(x):
+    if 1 <= x <= 7:
+        if 1 <= x <= 5:
+            return 'Этот день недели - рабочий'
+        else: return 'Ура! Выходной!'
+    else: return 'неверно задано число'
+
+l = int(input('Введите число = '))
+print(weekends_or_not(l))
+    
+
