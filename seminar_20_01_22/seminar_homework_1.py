@@ -50,18 +50,26 @@ import math
 # print(find_last_number_of_hundreds(h))
 
 #11. Дано число из отрезка [10, 99]. Показать наибольшую цифру числа
-def biggest_number(x, y, z):
-    if y <= x <= z:
-        first = x//10
-        second = x%10
-        if first > second:
-            return first
-        else: return second
-    else: return 'неверно указано число'
+# def biggest_number(x, y, z):
+#     if y <= x <= z:
+#         first = x//10
+#         second = x%10
+#         if first > second:
+#             return first
+#         else: return second
+#     else: return 'неверно указано число'
 
-y = 10
-z = 99
-i = int(input('Введите число из отрезка [10, 99] = '))
-print(biggest_number(i, y, z))
+# y = 10
+# z = 99
+# i = int(input('Введите число из отрезка [10, 99] = '))
+# print(biggest_number(i, y, z))
 
-        
+#13. Выяснить, кратно ли число заданному, если нет, вывести остаток.
+
+def kratno_or_not(x, y):
+    if x%y ==0: return f'Число {x} кратно числу {y}'
+    else: return x%y
+
+j = -9
+k = int(input('Введите число = '))
+print(kratno_or_not(j, k))
