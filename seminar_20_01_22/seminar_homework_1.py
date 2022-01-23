@@ -1,3 +1,5 @@
+import math
+
 # 1. По двум заданным числам проверять является ли первое квадратом второго
 # def Task_1(x,y):
 #     return x == y**2
@@ -18,13 +20,22 @@
 # print(day_title(c))
 
 #5. Написать программу вычисления значения функции y = f(a)
-import math
+# def find_cosinus(x):
+#     return f'cos{x} = {math.cos(x)}'
 
-def find_cosinus(x):
-    return f'cos{x} = {math.cos(x)}'
+# d = int(input('число = '))
+# print(find_cosinus(d))
 
-d = int(input('число = '))
-print(find_cosinus(d))
+#7. Показать числа от -N до N
+def show_number(x, y):
+    for i in range(x, y+1):
+        print(i)
+
+e = int(input('-N = '))
+g = int(input('N = '))
+show_number(e, g)
+
+
 
 
         
