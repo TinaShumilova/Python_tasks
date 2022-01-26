@@ -47,6 +47,15 @@
 # print(square_table(G))
 
 # 25. Найти сумму чисел от 1 до А
+def sum_find(h):
+    summa = 0
+    for i in range(1, h+1): 
+        summa += i
+    return summa
+
+H = int(input('Введите конечное число - '))
+print(sum_find(H))
+
 # 27. Определить количество цифр в числе
 # 29. Написать программу вычисления произведения чисел от 1 до N
 
