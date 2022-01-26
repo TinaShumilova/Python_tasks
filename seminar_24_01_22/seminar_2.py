@@ -58,4 +58,12 @@
 # print(sum_in_number(n))
 
 # 30. Показать кубы чисел, заканчивающихся на четную цифру
-
+def even_cubes(list):
+    for i in list: 
+        if i%2 == 0: 
+            i **= 3
+            print(f'{i},', end= ' ') 
+        
+numbers = [2, 2, 10, 45, 3, 7, 6, 6]
+print(numbers)
+even_cubes(numbers)
