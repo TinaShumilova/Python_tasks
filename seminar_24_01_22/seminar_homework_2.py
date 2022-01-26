@@ -47,15 +47,33 @@
 # print(square_table(G))
 
 # 25. Найти сумму чисел от 1 до А
-def sum_find(h):
-    summa = 0
-    for i in range(1, h+1): 
-        summa += i
-    return summa
+# def sum_find(h):
+#     summa = 0
+#     for i in range(1, h+1): 
+#         summa += i
+#     return summa
 
-H = int(input('Введите конечное число - '))
-print(sum_find(H))
+# H = int(input('Введите конечное число - '))
+# print(sum_find(H))
 
 # 27. Определить количество цифр в числе
+# def lenght_of_number(j):
+#     temp = list(str(j))
+#     if j > 0: return len(temp)
+#     else:
+#         temp.pop(0)
+#         return len(temp)
+
+# J = int(input('Введите число - '))
+# print(lenght_of_number(J))
+
 # 29. Написать программу вычисления произведения чисел от 1 до N
+def result_of_numbers_multiplication(k):
+    temp = 1
+    for i in range(1, k+1): 
+        temp *= i
+    return temp
+
+K = int(input('Введите конечное число - '))
+print(result_of_numbers_multiplication(K))
 
