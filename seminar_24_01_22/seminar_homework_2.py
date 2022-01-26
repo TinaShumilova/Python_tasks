@@ -39,12 +39,20 @@
 # print(polindrom_or_not(E))
 
 # 23. Показать таблицу квадратов чисел от 1 до N 
-# def square_table(g):
-#     for i in range(1, g+1): 
-#         print(f'{i} >>> {i**2}')
+def square_table(g):
+    for i in range(1, g+1): 
+        print(f'{i} >>> {i**2}')
 
-# G = int(input('Введите конечное число - '))
-# print(square_table(G))
+G = int(input('Введите конечное число - '))
+print(square_table(G))
+
+# Результат 
+# 1 >>> 1
+# 2 >>> 4
+# 3 >>> 9
+# 4 >>> 16
+# 5 >>> 25
+# None - откуда это взялось?   
 
 # 25. Найти сумму чисел от 1 до А
 # def sum_find(h):
@@ -68,12 +76,11 @@
 # print(lenght_of_number(J))
 
 # 29. Написать программу вычисления произведения чисел от 1 до N
-def result_of_numbers_multiplication(k):
-    temp = 1
-    for i in range(1, k+1): 
-        temp *= i
-    return temp
+# def result_of_numbers_multiplication(k):
+#     temp = 1
+#     for i in range(1, k+1): 
+#         temp *= i
+#     return temp
 
-K = int(input('Введите конечное число - '))
-print(result_of_numbers_multiplication(K))
-
+# K = int(input('Введите конечное число - '))
+# print(result_of_numbers_multiplication(K))
