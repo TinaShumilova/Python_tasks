@@ -20,25 +20,32 @@
 # print(find_quatro(C, D))
 
 # 21. Программа проверяет пятизначное число на палиндромом.
-def polindrom_or_not(e):
-    e = input('Введите пятизначное число - ')
-    temp1 = int(e)
-    if temp1 > 0: temp2 = list(e)
-    else:
-        temp2 = list(e)
-        temp2.pop(0)
-    while len(temp2) == 5:
-        for i in temp2:
-            if temp2[0] == temp2[-1] and temp2[1] == temp2[-2]:
-                return f'Число {e} является палиндромом'
-            else: 
-                return f'Число {e} не является палиндромом'
-    else: return 'Неверно задано число.'
+# def polindrom_or_not(e):
+#     e = input('Введите пятизначное число - ')
+#     temp1 = int(e)
+#     if temp1 > 0: temp2 = list(e)
+#     else:
+#         temp2 = list(e)
+#         temp2.pop(0)
+#     while len(temp2) == 5:
+#         for i in temp2:
+#             if temp2[0] == temp2[-1] and temp2[1] == temp2[-2]:
+#                 return f'Число {e} является палиндромом'
+#             else: 
+#                 return f'Число {e} не является палиндромом'
+#     else: return 'Неверно задано число.'
 
-E = None
-print(polindrom_or_not(E))
+# E = None
+# print(polindrom_or_not(E))
 
 # 23. Показать таблицу квадратов чисел от 1 до N 
+# def square_table(g):
+#     for i in range(1, g+1): 
+#         print(f'{i} >>> {i**2}')
+
+# G = int(input('Введите конечное число - '))
+# print(square_table(G))
+
 # 25. Найти сумму чисел от 1 до А
 # 27. Определить количество цифр в числе
 # 29. Написать программу вычисления произведения чисел от 1 до N
