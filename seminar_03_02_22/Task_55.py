@@ -3,11 +3,12 @@
 # Найти его.
 
 file_numbers = 'seminar_03_02_22/file.txt'
+
 # with open(file_numbers, 'w') as data_text:
 #     data_text.writelines(input())
 
-with open(file_numbers) as fn:
-        data = fn.readlines()
+fn = open(file_numbers, 'r')
+data = fn.read()
     
 list1 = [int(i) for i in data if i != ' ']
 print(list1)
