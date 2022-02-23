@@ -44,7 +44,7 @@ def square_table(g):
         print(f'{i} >>> {i**2}')
 
 G = int(input('Введите конечное число - '))
-print(square_table(G))
+square_table(G)
 
 # Результат 
 # 1 >>> 1
