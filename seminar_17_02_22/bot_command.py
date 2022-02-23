@@ -6,7 +6,9 @@ from game import *
 def temp(update: Update, context: CallbackContext):
     temp = update.message.text
     item = temp.split()
+    print(item)
     number = int(item[0])
+    print(number)
     print(type(number))
     #update.message.reply_text(number)
     return number
@@ -55,4 +57,5 @@ def game_command(update: Update, context: CallbackContext):
             update.message.reply_text(f'Победил игрок {turn}')
             break    
         turn = 2 if turn == 1 else 1
+
 

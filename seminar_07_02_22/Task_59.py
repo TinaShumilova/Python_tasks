@@ -1,3 +1,5 @@
+import random
+
 sweets = 121
 max_sweets = 28
 turn = 1
