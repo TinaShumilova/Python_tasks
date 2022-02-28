@@ -9,3 +9,6 @@ for i in list1:
         if i == j:
             count +=1
     if count == 0: list2.append(i)
+
+print(list1)
+print(list2)
